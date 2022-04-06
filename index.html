@@ -10,6 +10,10 @@
 </head>
 <body>
     <div class="left-side">
+        <div class="odin-logo-section">
+            <img class="odin-logo" src="./imgs/odin-logo.png" alt="odin-logo">
+            <p class="odin-text">ODIN</p>
+        </div>
         <footer>Copyright © Rahim Dashti</footer>
     </div>
     <div class="right-side">
@@ -25,38 +29,41 @@
                 <legend style="font-weight: 600;">Let's do this!</legend>
                 <div class="first-row row">
                     <div class="form-first-name">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <label class="for-block-display" for="first-name">FIRST NAME</label>
+                        <input class="form-input for-block-display" type="text" name="first-name" id="first-name" required>
                     </div>
                     <div class="form-last-name">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <label class="for-block-display" for="last-name">LAST NAME</label>
+                        <input class="form-input for-block-display" type="text" name="last-name" id="last-name" required> 
                     </div>
                 </div>
                 <div class="second-row row">
                     <div class="email">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <label class="for-block-display" for="email">EMAIL</label>
+                        <input class="form-input for-block-display" type="email" name="email" id="email" required>
                     </div>
                     <div class="phone-number">
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" name="phone-number" id="phone-number">
+                        <label class="for-block-display" for="phone-number">PHONE NUMBER</label>
+                        <input class="form-input for-block-display" type="tel" name="phone-number" id="phone-number">
                     </div>
                 </div>
                 <div class="third-row row">
                     <div class="password">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <label class="for-block-display" for="password">PASSWORD</label>
+                        <input class="password-input form-input for-block-display" type="password" name="password" id="password" required>
+                        <p class="error"></p>
                     </div>
                     <div class="password-confirm">
-                        <label for="password-confirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="password-confirm" id="password-confirm">
+                        <label class="for-block-display" for="password-confirm">CONFIRM PASSWORD</label>
+                        <input class="password-input form-input for-block-display" type="password" name="password-confirm" id="password-confirm" required onkeyup="checkPass()">
                     </div>
+                </div>
+                <div class="button-section">
+                    <button name="submit" class="submit-button" id="submit-button" type="submit">Create Account</button>
                 </div>
             </form>
         </div>
         <div class="right-lower-section">
-            <button type="submit">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
